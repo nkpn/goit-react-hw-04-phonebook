@@ -30,14 +30,14 @@ function App() {
   };
 
   const deleteContact = data => {
-    this.setState(prevState => ({
-      contacts: prevState.contacts.filter(contact => contact.id !== data),
-    }));
+    setContacts(contacts.filter(contact => contact.id !== data));
+    // this.setState(prevState => ({
+    //   contacts: prevState.contacts.filter(contact => contact.id !== data),
+    // }));
   };
 
-  const onFilter = filter => {
-    const { value } = filter.target;
-    setFilter(value);
+  const onFilter = evt => {
+    setFilter(evt.target.value);
   };
 
   const getVisibleContacts = () => {
