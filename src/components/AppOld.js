@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import notify from 'helpers/Toast';
 import { ToastContainer } from 'react-toastify';
 import '../index.css';
-import { saveToLS } from 'Hooks/localStorage';
-import { getFromLS } from 'Hooks/localStorage';
+import { saveToLS } from 'Hooks/useLocalStorage';
+import { getFromLS } from 'Hooks/useLocalStorage';
 //* Components
 import Container from './Container';
 import SubmitForm from './SubmitForm';

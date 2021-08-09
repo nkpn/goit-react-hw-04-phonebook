@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import notify from 'helpers/Toast';
 import { ToastContainer } from 'react-toastify';
 import '../index.css';
-import useLocalStorage from 'Hooks/localStorage';
+import useLocalStorage from 'Hooks/useLocalStorage';
 //* Components
 import Container from './Container';
 import SubmitForm from './SubmitForm';
